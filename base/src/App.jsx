@@ -99,12 +99,13 @@ function App() {
 
         {/* <img src='' alt="" /> */}
         <div>
+          <div className="small-space"></div>
           <div className="grid medium-space desktop">
             {currentPageSearch.map((data) => {
               // console.log(data.urls)
               return (
                 <>
-                  <div className="s6">
+                  {/* <div className="s6">
                     <article className="no-padding fill">
                       <img className="responsive small" src={data.urls.full} />
                       <div className="padding">
@@ -117,8 +118,27 @@ function App() {
                         </nav>
                       </div>
                     </article>
+                  </div> */}
+                  <div className="s6">
+                    <article className="no-padding fill">
+                      <div className="grid no-space">
+                        <div className="s6">
+                          <img className="responsive" src={data.urls.full} />
+                        </div>
+                        <div className="s6">
+                          <div className="padding">
+                            <h5>{data.alt_description}</h5>
+                            <p>{data.description}.</p>
+                            <nav>
+                              <a target="_blank" href={data.urls.full}>
+                                <button>View image</button>
+                              </a>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
                   </div>
-                  {/* <BlogPost url={data.urls.full} /> */}
                 </>
               )
             })}
