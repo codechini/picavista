@@ -36,6 +36,7 @@ const BlogPost = (props) => {
           </div>
         </div>
       </article >
+
     </>
   )
 }

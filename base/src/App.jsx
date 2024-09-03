@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import FullBlog from './components/FullBlog';
 import Pagination from './components/Pagination';
 // import BigData from './data.json';
-// import CreatePost from './pages/CreatePost';
 
 function App() {
   // const API_url = `https://api.unsplash.com/search/photos?page=1&query=${searchValue}&client_id=${import.meta.env.VITE_SOME_KEY}`;
@@ -98,8 +97,6 @@ function App() {
           {/* </form> */}
         </article>
 
-
-        .
         {/* <img src='' alt="" /> */}
         <div>
           <div className="grid medium-space desktop">
@@ -115,13 +112,13 @@ function App() {
                         <p>{data.description}</p>
                         <nav>
                           <a target="_blank" href={data.urls.full}>
-                            <button>More</button>
+                            <button>View image</button>
                           </a>
                         </nav>
                       </div>
                     </article>
                   </div>
-
+                  {/* <BlogPost url={data.urls.full} /> */}
                 </>
               )
             })}
@@ -141,7 +138,7 @@ function App() {
                       <p>{data.description}</p>
                       <nav>
                         <a target="_blank" href={data.urls.full}>
-                          <button>More</button>
+                          <button>View image</button>
                         </a>
                       </nav>
                     </div>
