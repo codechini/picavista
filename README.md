@@ -9,5 +9,5 @@
 </ul>
 <h2>and</h2>
 <ul>
-  <li>There is a .env[educational purpose] to test if you pr key exists delete and use</li>
+  <li>There is a .env file [educational purpose] to test if you pr key exists delete and use</li>
 </ul>
