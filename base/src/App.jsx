@@ -123,7 +123,7 @@ function App() {
                     <article className="no-padding fill">
                       <div className="grid no-space">
                         <div className="s6">
-                          <img className="responsive" src={data.urls.full} />
+                          <img className="responsive" src={data.urls.small} />
                         </div>
                         <div className="s6">
                           <div className="padding">
@@ -157,7 +157,7 @@ function App() {
                       <h5>{data.alt_description}</h5>
                       <p>{data.description}</p>
                       <nav>
-                        <a target="_blank" href={data.urls.full}>
+                        <a target="_blank" href={data.urls.small}>
                           <button>View image</button>
                         </a>
                       </nav>
