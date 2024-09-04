@@ -80,7 +80,7 @@ function App() {
           </div>
         </div> */}
 
-        <article className=" responsive max center-align middle-align">
+        <div className=" responsive">
           {/* <form> */}
           <div className="grid mobile-search">
             <div className="s10">
@@ -95,7 +95,7 @@ function App() {
             </div>
           </div>
           {/* </form> */}
-        </article>
+        </div>
 
         {/* <img src='' alt="" /> */}
         <div>
@@ -152,12 +152,12 @@ function App() {
                     <p>{data.alt_description}</p>
                   </div> */}
                   <article className="no-padding fill">
-                    <img className="responsive small" src={data.urls.full} />
+                    <img className="responsive small" src={data.urls.small} />
                     <div className="padding">
                       <h5>{data.alt_description}</h5>
                       <p>{data.description}</p>
                       <nav>
-                        <a target="_blank" href={data.urls.small}>
+                        <a target="_blank" href={data.urls.full}>
                           <button>View image</button>
                         </a>
                       </nav>
